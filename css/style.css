@@ -31,7 +31,7 @@ body {
 .party {
     grid-area: party;
     min-height: 450px;
-    background-image: url('../img/epicspook.png');
+    background-image: url('../img/epicspook.jpg');
     /*background-size: cover;
     background-position: top;*/
     padding: 50px;
@@ -99,4 +99,24 @@ button {
 }
 [aria-controls="menu-list"] {
     display: none;
+}
+
+.features {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.feature .icon{
+    font-size: 3rem;
+}
+
+.feature p {
+    color: rgba(0, 0, 0, 0.5);
 }
