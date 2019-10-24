@@ -69,7 +69,7 @@
         </div>
     
         <div class="gallery">
-            <h2>MonkaWt="">
+            <h2>MonkaW</h2>
             <img src="http://lorempixel.com/101/101/" alt="">
             <img src="http://lorempixel.com/102/102/" alt="">
             <img src="http://lorempixel.com/103/103/" alt="">
@@ -82,13 +82,15 @@
         </div>
     </div>
     <script>
-        const manu8u = document.querySelector('button[aria-expanded]');
-
-        function toggleMenu({target}){
-            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
-            manuButton.setA
-        }
-    </script>
+            const menuButton = document.querySelector('button[aria-expanded]');
+            
+            function toggleMenu({target}){
+                const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+                menuButton.setAttribute('aria-expanded', !expanded);
+                console.log("Toggled!");
+            }
+            menuButton.addEventListener('click', toggleMenu);
+        </script>
 </body>
 
 </html>
